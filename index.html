@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servitor Planner</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <div class="header">
+    <h1>Servitor Planner</h1>
+    <h2>Build your golem, elemental, or assistant spirit</h2>
+    <p>A servitor is an artificial spirit created to perform tasks or hold intentions for its maker.
+    It is programmed by ritual, symbol, and focused will to act on behalf of its creator.</p>
+  </div>
+
+  <div class="form-container">
+    <h1>Create your servitor wisely</h1>
+    <h3>Describe the characteristics of your entity</h3>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="purpose">Purpose</label><br>
+      <input type="text" id="purpose" name="purpose" required><br><br>
+
+      <label for="description">Description</label><br>
+      <textarea id="description" name="description" rows="4" cols="40"></textarea><br><br>
+
+      <label for="killswitch">Kill switch</label><br>
+      <input type="text" id="killswitch" name="killswitch"><br><br>
+
+      <label for="hp">Health points</label><br>
+      <input type="number" id="hp" name="health_points" min="0"><br><br>
+
+      <label for="attack">Attack points</label><br>
+      <input type="number" id="attack" name="attack_points" min="0"><br><br>
+
+      <label for="ritual_date">Planned ritual date</label><br>
+      <input type="date" id="ritual_date" name="ritual_date"><br><br>
+
+      <fieldset>
+        <legend>Element</legend>
+        <input type="radio" id="element_fire" name="element" value="fire">
+        <label for="element_fire">Fire</label><br>
+        <input type="radio" id="element_water" name="element" value="water">
+        <label for="element_water">Water</label><br>
+        <input type="radio" id="element_earth" name="element" value="earth">
+        <label for="element_earth">Earth</label><br>
+        <input type="radio" id="element_air" name="element" value="air">
+        <label for="element_air">Air</label><br>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend>Planetary energy (check all that apply)</legend>
+        <input type="checkbox" id="planet_moon" name="planets" value="Moon">
+        <label for="planet_moon">Moon</label><br>
+        <input type="checkbox" id="planet_mercury" name="planets" value="Mercury">
+        <label for="planet_mercury">Mercury</label><br>
+        <input type="checkbox" id="planet_venus" name="planets" value="Venus">
+        <label for="planet_venus">Venus</label><br>
+        <input type="checkbox" id="planet_sun" name="planets" value="Sun">
+        <label for="planet_sun">Sun</label><br>
+        <input type="checkbox" id="planet_mars" name="planets" value="Mars">
+        <label for="planet_mars">Mars</label><br>
+        <input type="checkbox" id="planet_jupiter" name="planets" value="Jupiter">
+        <label for="planet_jupiter">Jupiter</label><br>
+        <input type="checkbox" id="planet_saturn" name="planets" value="Saturn">
+        <label for="planet_saturn">Saturn</label><br>
+      </fieldset>
+      <br>
+
+      <label for="sigil">Sigil (import file)</label><br>
+      <input type="file" id="sigil" name="sigil" accept="image/*,application/pdf"><br><br>
+
+      <button type="submit">Create Servitor</button>
+
+    </form>
+  </div>
+</body>
+</html>
