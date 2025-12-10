@@ -1,0 +1,111 @@
+body {
+  background-color: #0b0a10;
+  font-family: 'Georgia', serif;
+  color: #dcd2f8;
+  margin: 0;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #6a4bcf;
+}
+
+.header h2 {
+  font-size: 1.3rem;
+  opacity: 0.8;
+  margin-top: -0.5rem;
+}
+
+.header p {
+  width: 60%;
+  margin: 1rem auto;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.form-container {
+  background-color: #14121d;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 0 0 25px rgba(135, 95, 255, 0.4);
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 15px #7434f1;
+}
+
+.form-container h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+label {
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+input, textarea, button {
+  width: auto;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+  padding: 0.7rem;
+  border: 1px solid #6c54b3;
+  background-color: #1b1826;
+  color: #e8ddff;
+  border-radius: 6px;
+}
+
+fieldset {
+  border: 1px solid #6c54b3;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  background-color: #1b1826;
+  color: #e8ddff;
+}
+
+fieldset label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+fieldset input[type="radio"],
+fieldset input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+button[type="submit"] {
+  background-color: #2d1e6a;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #8967ff;
+  box-shadow: 0 0 15px #8a6fff;
+}
